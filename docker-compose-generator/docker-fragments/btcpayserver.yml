@@ -4,7 +4,7 @@ services:
 
   btcpayserver:
     restart: unless-stopped
-    image: ${BTCPAY_IMAGE:-zeus-pay/btcpayserver:latest$<BTCPAY_BUILD_CONFIGURATION>?}
+    image: ${BTCPAY_IMAGE:-zeus-pay/btcpayserver:2.0.0.1$<BTCPAY_BUILD_CONFIGURATION>?}
     expose:
       - "49392"
     environment:
